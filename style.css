@@ -9,36 +9,76 @@ body {
     position: relative;
 }
 
-.container {
-    width: 100vw;
-    height: 100vh;
+.top-menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+
+    background-image: url('images/header_background.jpg'); /* Вкажіть шлях до вашого зображення */
+    background-size: cover; /* Зображення покриває весь блок */
+    background-position: center; /* Центрування зображення */
+    background-repeat: no-repeat; /* Зображення не повторюється */
 }
 
-.btn1 {
-    background: #0199ff;
-    font-size: 30px;
+.top-menu a {
     color: white;
-    padding: .5em;
-    border: 1px solid rgb(0, 89, 223);
-    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.top-menu a:hover {
+    background-color: #363636;
+}
+
+/* Вертикальне меню з правого боку */
+.side-menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    width: 200px;
+    padding: 10px;
+}
+
+.side-menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.side-menu a:hover {
+    background-color: #555;
+}
+
+/* Головне меню */
+.menu_main {
+    display: flex;
+    justify-content: center; /* Вирівнювання елементів по центру горизонталі */
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+/* Елементи меню */
+.menu_item {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
-    transition: border 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, font-size 0.5s;
-}
-
-.btn1:hover {
-    background: #ffd500;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgb(255, 157, 0);
-    border-radius: 8px;
-    font-size: 34px;
-    
-}
-
-.btn:hover {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    border: 3px solid rgb(255, 157, 0);
+    font-size: 16px;
 }
