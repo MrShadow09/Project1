@@ -1,11 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+    
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login</title>
+
     <link rel="stylesheet" href="login.css">
+
 </head>
+
 <body>
 
     <div class="container">
@@ -14,10 +22,53 @@
 
             <img src="images/user.png" class="user_icon">
 
+            <h1>Login</h1>
+
+    <form action="#">
+
+        <label for="username">Username</label>
+
+        <input type="text" id="username" placeholder="Username...">
+
+        <label for="form-pass">Password</label>
+
+        <input type="password" id="form-pass" class="form-password" placeholder="Password..." >
+
+        <span class="pass-icon" id="pass-icon"><img src="images/eye.png" style="width: 20px; height: 20px;"></span>
+
+        <input type="submit" value="Login">
+
+    </form>
+
         </div>
 
 
     </div>
+
+
+<script>
+
+const inputPass = documet.getElementById('form-pass');
+
+const iconPass = documet.getElementById('pass-icon');   
+
+iconPass.addEventListener('click', () => {
+
+    if (inputPass.getAttribute('type') === "password") {
+
+        inputPass.setAttribute('type', 'text');
+
+    } else {
+
+        inputPass.setAttribute('type', 'password');
+
+    }
+
+});
+
+
+</script>
     
 </body>
+
 </html>
