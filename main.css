@@ -1,0 +1,208 @@
+/* Стилі для всього тіла */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фіксоване зображення фону */
+    background-blend-mode: overlay; /* Змішування кольору з зображенням */
+  }
+  
+  /* Шапка */
+  .header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url('images/header_background.png'); /* Фон-картинка */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    border-radius: 0 0 15px 15px; /* Заокруглення лише нижніх кутів */
+    overflow: hidden; /* Обрізання фону за межами контейнера */
+  }
+  
+  /* Контейнер для кнопок */
+  .header-buttons {
+    display: flex;
+    gap: 15px;
+    background-color: #333; /* Темно-сірий фон */
+    padding: 10px;
+    border-radius: 15px; /* Заокруглені кути */
+  }
+  
+  /* Кнопки */
+  .header-button {
+    background-color: #444; /* Темно-сірий колір */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* Заокруглені кути */
+    transition: background-color 0.3s;
+  }
+  
+  /* Зміна кольору кнопок при наведенні */
+  .header-button:hover {
+    background-color: #555;
+  }
+  
+/* Бокове меню */
+.side-menu {
+    position: absolute;
+    top: 110px;
+    right: 375px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px;
+    z-index: 1000;
+}
+
+/* Медіа-запит для меншої ширини вікна */
+@media (max-width: 1400px) {
+  .side-menu {
+      width: 200px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 240px;
+  }
+}
+@media (max-width: 1400px) {
+  .side-menu {
+      width: 200px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 210px;
+  }
+}
+@media (max-width: 1300px) {
+  .side-menu {
+      width: 200px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .side-menu {
+      width: 195px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 180px;
+  }
+}
+@media (max-width: 1100px) {
+  .side-menu {
+      width: 190px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .side-menu {
+      width: 175px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 120px;
+  }
+}
+@media (max-width: 900px) {
+  .side-menu {
+      width: 150px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .side-menu {
+      width: 120px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .side-menu {
+      width: 100px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .side-menu {
+      width: 90px; /* Зменште ширину бокового меню */
+      margin: 10px; /* Зменшіть відступ */
+      right: 25px;
+  }
+}
+
+/* Медіа-запит для дуже маленьких екранів */
+@media (max-width: 500px) {
+  .side-menu {
+      width: 70px; 
+      position: absolute;
+      right: 0;
+  }
+}
+
+.side-menu-title {
+    color: white; /* Колір тексту заголовка */
+    margin: 0; /* Обнуляємо відступи */
+    padding-bottom: 10px; /* Відступ знизу для відстані до кнопок */
+    border-bottom: 1px solid #555; /* Лінія під заголовком */
+    text-align: center; /* Вирівнювання по центру */
+}
+
+.side-menu a {
+    display: block; /* Робимо посилання блочними */
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Заокруглені кути */
+}
+
+.side-menu a:hover {
+    background-color: #555; /* Зміна кольору при наведенні */
+}
+
+/* Основний контент */
+main {
+    margin-top: 100px; /* Відступ, щоб не закривати шапкою */
+    margin-right: 240px; /* Відступ для бокового меню */
+    padding: 20px; /* Внутрішній відступ */
+}
+
+/* Стилі для модів */
+.mod-item {
+    background-color: white; /* Фон для елемента моду */
+    border-radius: 10px; /* Заокруглені кути */
+    padding: 15px; /* Внутрішній відступ */
+    margin: 20px auto; /* Центрування елемента */
+    width: 400px; /* Ширина елемента моду */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тінь для елемента */
+}
+
+.mod-image {
+    width: 100%; /* Ширина картинки */
+    border-radius: 10px; /* Заокруглені кути для картинки */
+}
+
+.mod-title {
+    font-size: 20px; /* Розмір шрифту назви */
+    margin: 10px 0; /* Відступ зверху та знизу */
+}
+
+.mod-description {
+    font-size: 14px; /* Розмір шрифту опису */
+    color: #666; /* Колір тексту опису */
+}
