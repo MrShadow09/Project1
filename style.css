@@ -35,7 +35,7 @@ body {
 }
 
 .top-menu a:hover {
-    background-color: #363636;
+    background-color: rgb(75, 75, 75, 0.5);
 }
 
 /* Вертикальне меню з правого боку */
