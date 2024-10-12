@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фіксоване зображення фону */
+    background-blend-mode: overlay; /* Змішування кольору з зображенням */
+  }
+  
+  /* Шапка */
+  .header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url('images/header_background.png'); /* Фон-картинка */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px; /* Заокруглення лише нижніх кутів */
+    overflow: hidden; /* Обрізання фону за межами контейнера */
+  }
+  
+  /* Контейнер для кнопок */
+  .header-buttons {
+    display: flex;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  /* Кнопки */
+  .header-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Зміна кольору кнопок при наведенні */
+  .header-button:hover {
+    background-color: #555;
+  }
+  
+  /* Основний контент */
+  main {
+    margin-top: 100px;
+  }
+
+  /* Попередження на форумі */
+  .warning1 {
+    position: relative;
+    top: 200px;
+    padding: 20px;
+    background-color: rgba(145, 145, 145, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+}
