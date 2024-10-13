@@ -1,5 +1,9 @@
 body {
     margin: 0;
+    height: 100vh; /* Займає всю висоту вікна браузера */
+    display: flex;
+    justify-content: center; /* Горизонтальне вирівнювання */
+    align-items: top; /* Вертикальне вирівнювання */
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-image: url('images/background.png');
@@ -54,6 +58,11 @@ body {
   .header-button:hover {
     background-color: #555;
   }
+  
+  /* Основний контент */
+  main {
+    margin-top: 100px;
+  }
 
   .auth-buttons {
     position: relative;
@@ -85,19 +94,50 @@ body {
   .register-button:hover {
     background-color: #da834a;
   }
-  
-  /* Основний контент */
-  main {
-    margin-top: 100px;
-  }
+
+  .mod-image {
+    width: 854px;
+    height: 480px;
+    border-radius: 10px;
+}
 
   /* Попередження на форумі */
-  .warning1 {
-    position: relative;
-    top: 200px;
+  .content1 { 
+    width: 1000px;
     padding: 20px;
     background-color: rgba(145, 145, 145, 0.3);
     backdrop-filter: blur(10px);
     color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
     z-index: 1;
+}
+
+.desc_end {
+  border-bottom: 1px solid #555;
+  padding: 10px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745; /* Зелений фон */
+  text-decoration: none; /* Вимкнути підкреслення */
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Зміна кольору та анімація при наведенні */
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Ефект натискання */
+.download-button:active {
+  transform: scale(0.98);
 }

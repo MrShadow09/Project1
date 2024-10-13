@@ -56,6 +56,38 @@ body {
     background-color: #555;
   }
   
+  /* Блок для кнопок авторизації */
+.auth-buttons {
+  position: relative;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Стилі для кнопок входу та реєстрації */
+.auth-button {
+  background-color: #008CBA; /* Синій колір */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #007B9A;
+}
+
+.register-button {
+  background-color: #e29d1e; /* Зелений колір */
+}
+
+.register-button:hover {
+  background-color: #da834a;
+}
+
 /* Бокове меню */
 .side-menu {
     position: absolute;
@@ -180,21 +212,22 @@ main {
     margin-top: 100px; /* Відступ, щоб не закривати шапкою */
     margin-right: 240px; /* Відступ для бокового меню */
     padding: 20px; /* Внутрішній відступ */
+    flex: 1;
 }
 
 /* Стилі для модів */
 .mod-item {
-    background-color: white; /* Фон для елемента моду */
-    border-radius: 10px; /* Заокруглені кути */
-    padding: 15px; /* Внутрішній відступ */
-    margin: 20px auto; /* Центрування елемента */
-    width: 400px; /* Ширина елемента моду */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тінь для елемента */
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .mod-image {
     width: 100%; /* Ширина картинки */
-    border-radius: 10px; /* Заокруглені кути для картинки */
+    border-radius: 10px;
 }
 
 .mod-title {
@@ -205,4 +238,21 @@ main {
 .mod-description {
     font-size: 14px; /* Розмір шрифту опису */
     color: #666; /* Колір тексту опису */
+}
+
+.details-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-self: stretch; /* Розтягнути кнопку на всю ширину контейнера */
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #007B9A;
 }
