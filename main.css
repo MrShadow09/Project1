@@ -256,3 +256,26 @@ main {
 .details-button:hover {
   background-color: #007B9A;
 }
+
+.download-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745; /* Зелений фон */
+  text-decoration: none; /* Вимкнути підкреслення */
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Зміна кольору та анімація при наведенні */
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Ефект натискання */
+.download-button:active {
+  transform: scale(0.98);
+}
