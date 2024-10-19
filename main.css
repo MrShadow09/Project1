@@ -76,6 +76,12 @@ body {
   transition: background-color 0.3s, font-size 0.3 ease;
 }
 
+a{
+  text-decoration: none;
+  color: #FFFF;
+  
+}
+
 .login-button:hover {
   background-color: #007B9A;
 }
