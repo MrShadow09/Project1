@@ -5,27 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MC Mods Planet</title>
   <link rel="stylesheet" href="forum.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="logo">
+    <img src="images/logo.png" width=80px, height=80px>
+  </div>
   <header class="header-main">
     <div class="header-buttons">
         <a href="main.html"><button class="header-button">Головна</button></a>
         <a href="forum.html"><button class="header-button">Форум</button></a>
         <a href="dl-mc.html"><button class="header-button">Завантажити Minecraft</button></a>
         <a href="servers.html"><button class="header-button">Сервери</button></a>
-        <a href="crafts.html"><button class="header-button">Крафти</button></a>
+        <a href="about.html"><button class="header-button">Про нас</button></a>
     </div>
     <div class="auth-buttons">
-      <button class="auth-button login-button">Увійти</button>
-      <button class="auth-button register-button">Зареєструватися</button>
+      <a href="login.html"><button class="auth-button login-button">Увійти</button></a>
+      <a href="sign-up.html"><button class="auth-button register-button">Зареєструватися</button></a>
   </div>
   </header>
 
   <main>
+    <div class="server-container">
+      <video itemprop="video" class="server-vid" width="468" height="60" data-src="files/_videos/servers-enchantedmc_20388-89321.mp4" src="files/_videos/servers-enchantedmc_20388-89321.mp4" autoplay="" playsinline="" loop="" muted="" data-loaded="true">
+        <source data-src="files/_videos/servers-enchantedmc_20388-89321.mp4" type="video/mp4">
+      </video>
+      <h2>Enchanted MC</h2>
+      <p>We are an innovative Minecraft Network, we strive to make the best possible and most optimized gameplay experience for our community.
+        <br>We have many gamemodes you may enjoy such as Skyblock, Prison and Gens. You can join today to see what we have to offer.
+
+        Join now today by using the IP below!</p>
+        <p style="color:rgb(0, 192, 0)">
+        IP: best.enchantedmc.net<br>
+        Версія: 1.21
+        </p>
+    </div>
+    <div class="server-container">
+      <video itemprop="video" class="server-vid" width="468" height="60" data-src="files/_videos/servers-vulengate_4354-18505.mp4" src="files/_videos/servers-vulengate_4354-18505.mp4" autoplay="" playsinline="" loop="" muted="" data-loaded="true">
+        <source data-src="files/_videos/servers-vulengate_4354-18505.mp4" type="video/mp4">
+      </video>
+      <h2>Vulengate</h2>
+      <p>Vulengate is a community focused survival server where Keep Inventory is enabled and griefing/raiding is strictly prohibited.
+        <br>The economy is community driven, with a variety of ways to earn money. You can join jobs, set up shops or list items on the auction house.
+        <p style="color:rgb(0, 192, 0)">
+        IP: best.vulengate.com<br>
+        Версія: 1.21
+        </p>
+    </div>
     <div class="warning1">
         <img src="images/warn.png" alt="warn image" width="100" height="100">
-        <p style="font-size: 32px;">На даний момент тут серверів немає.</p>
+        <p style="font-size: 30px;">Кінець списку серверів.</p>
     </div>
   </main>
 </body>

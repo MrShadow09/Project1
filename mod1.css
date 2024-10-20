@@ -162,6 +162,13 @@ body {
   transform: scale(0.98);
 }
 
+.logo {
+  position: fixed;
+  left: 500px;
+  top: 0px;
+  z-index: 1002;
+}
+
 @media (max-width: 1238px) {
   .auth-buttons {
     top: 63px;
