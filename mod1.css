@@ -125,7 +125,7 @@ body {
   .content1 { 
     width: 1000px;
     padding: 20px;
-    background-color: rgba(145, 145, 145, 0.3);
+    background-color: rgba(78, 78, 78, 0.3);
     backdrop-filter: blur(10px);
     color: white;
     border-radius: 15px;
@@ -164,9 +164,25 @@ body {
 
 .logo {
   position: fixed;
-  left: 500px;
   top: 0px;
-  z-index: 1002;
+  left: 0px;
+  z-index: 1010;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: display 0.3s ease, top 0.4s ease;
+}
+
+@media (max-width: 750px) {
+  .logo {
+    top: -100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    display: none;
+  }
 }
 
 @media (max-width: 1238px) {
