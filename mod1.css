@@ -29,8 +29,8 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    border-radius: 0 0 15px 15px; /* Заокруглення лише нижніх кутів */
-    overflow: hidden; /* Обрізання фону за межами контейнера */
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
   }
   
   .header-buttons {
@@ -70,23 +70,26 @@ body {
 }
 
 .auth-button {
-  background-color: #008CBA;
   color: white;
   border: none;
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
-  transition: background-color 0.3s, font-size 0.3 ease;
+  transition: font-size 0.3 ease;
 }
-  /* Зміна кольору кнопок при наведенні */
+
   .header-button:hover {
     background-color: #555;
   }
   
-  /* Основний контент */
   main {
     margin-top: 100px;
+  }
+  
+  .login-button {
+    background-color: #008CBA;
+    transition: background-color 0.3s ease;
   }
   
   .login-button:hover {
@@ -94,7 +97,8 @@ body {
   }
   
   .register-button {
-    background-color: #e29d1e; /* Зелений колір */
+    background-color: #e29d1e;
+    transition: background-color 0.3s ease;
   }
   
   .register-button:hover {

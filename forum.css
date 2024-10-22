@@ -66,27 +66,32 @@ body {
 }
 
 .auth-button {
-  background-color: #008CBA;
   color: white;
   border: none;
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
-  transition: background-color 0.3s, font-size 0.3 ease;
+  transition: font-size 0.3 ease;
 }
-  
-  .login-button:hover {
-    background-color: #007B9A;
-  }
-  
-  .register-button {
-    background-color: #e29d1e; /* Зелений колір */
-  }
-  
-  .register-button:hover {
-    background-color: #da834a;
-  }
+
+.login-button {
+  background-color: #008CBA;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #007B9A;
+}
+
+.register-button {
+  background-color: #e29d1e;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #da834a;
+}
   
   /* Основний контент */
   main {
