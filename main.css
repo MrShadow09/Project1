@@ -66,14 +66,13 @@ body {
 }
 
 .auth-button {
-  background-color: #008CBA;
   color: white;
   border: none;
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
-  transition: background-color 0.3s, font-size 0.3 ease;
+  transition: font-size 0.3 ease;
 }
 
 a{
@@ -82,12 +81,18 @@ a{
   
 }
 
+.login-button {
+  background-color: #008CBA;
+  transition: background-color 0.3s ease;
+}
+
 .login-button:hover {
   background-color: #007B9A;
 }
 
 .register-button {
   background-color: #e29d1e;
+  transition: background-color 0.3s ease;
 }
 
 .register-button:hover {
@@ -111,75 +116,75 @@ a{
     transition: width 0.4s ease, margin 0.4s ease, right 0.4s ease;
 }
 
-/* Кейфрейми, так так */
+/* Обеме */
 @media (max-width: 1500px) {
   .side-menu {
       width: 200px;
       margin: 10px;
-      right: 240px;
+      right: 235px;
   }
 }
 @media (max-width: 1400px) {
   .side-menu {
       width: 200px;
       margin: 10px;
-      right: 210px;
+      right: 205px;
   }
 }
 @media (max-width: 1300px) {
   .side-menu {
       width: 200px;
       margin: 10px;
-      right: 200px;
+      right: 195px;
   }
 }
 @media (max-width: 1200px) {
   .side-menu {
       width: 195px;
       margin: 10px;
-      right: 180px;
+      right: 175px;
   }
 }
 @media (max-width: 1100px) {
   .side-menu {
       width: 190px;
       margin: 10px;
-      right: 150px;
+      right: 145px;
   }
 }
 @media (max-width: 1000px) {
   .side-menu {
       width: 175px;
       margin: 10px;
-      right: 120px;
+      right: 115px;
   }
 }
 @media (max-width: 900px) {
   .side-menu {
       width: 150px;
       margin: 10px;
-      right: 100px;
+      right: 95px;
   }
 }
 @media (max-width: 800px) {
   .side-menu {
       width: 120px;
       margin: 10px;
-      right: 60px;
+      right: 55px;
   }
 }
 @media (max-width: 700px) {
   .side-menu {
       width: 100px;
       margin: 10px;
-      right: 35px;
+      right: 30px;
   }
 }
 @media (max-width: 600px) {
   .side-menu {
       width: 90px;
       margin: 10px;
-      right: 25px;
+      right: 20px;
   }
 }
 
@@ -222,7 +227,7 @@ main {
     border-radius: 10px;
     padding: 15px;
     margin: 20px auto;
-    width: 420px;
+    width: 430px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -251,11 +256,12 @@ main {
   border-radius: 10px;
   margin-top: 10px;
   align-self: stretch; /* Розтягнути кнопку на всю ширину контейнера */
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s ease;
 }
 
 .details-button:hover {
   background-color: #007B9A;
+  transform: scale(1.2);
 }
 
 .download-button {
@@ -495,5 +501,14 @@ main {
     justify-content: center;
     right: unset;
     gap: 7px;
+  }
+}
+
+@keyframes Scale {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.3);
   }
 }
